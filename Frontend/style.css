@@ -39,7 +39,41 @@ header h1{
 header p{
     font-size: 1.5em;
     opacity: 0.90;
+
     
     
-    
+}
+/* ============================================
+   WEATHER SECTION: Show current weather
+   ============================================ */
+.weather-section {
+  background: linear-gradient(135deg, #e8f4f8 0%, #d4e8f0 100%);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.weather-section h2 {
+  color: #034304;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.weather-info p {
+  background: rgb(238, 191, 191);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #4a8f4e;
+}
+
+.weather-info span {
+  font-weight: bold;
+  color: #1c271c;
 }
