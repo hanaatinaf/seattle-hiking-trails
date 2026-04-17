@@ -2,8 +2,6 @@
 /*
 Seattle Hiking Trails css file 
 
-
-
 * = selects everything
 margin: 0; padding: 0; = removes default spacing
 box-sizing: border-box; = makes sizing easier
@@ -11,7 +9,6 @@ font-family = the text style
 background-color = light gray background
 
 */
-
 
 *{
     margin: 0;
@@ -23,6 +20,26 @@ body{
     font-family: 'Times New Roman', Times, serif;
     line-height: 2;
     color: #333;
-    background-color: #d4d4d4;
+    background-color: #f8f9fa;
+}
+header{
+    background-color:linear-gradient(135deg, #2c5f2d 0%, #4a8f4e 100%);
+    color: rgb(204, 176, 231);
+    padding: 40pt 20pt;
+    text-align: center;
+    box-shadow:  0 4px 6px rgba(241, 39, 39, 0.1);;
 
+}
+header h1{
+    font-size: 2.5em;
+    margin-bottom: 5px;
+
+    
+}
+header p{
+    font-size: 1.5em;
+    opacity: 0.90;
+    
+    
+    
 }
