@@ -1,10 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Page Title</title>
+    <!-- Set character type and make page work on phones -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Travel & Hiking Inspiration</title>
+    <!-- Connect to style.css to make page look pretty -->
+    <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
-    <!-- Your content goes here -->
+    <!-- TOP OF PAGE: Title and description -->
+    <header>
+      <h1>🏔️ Seattle Hiking Trails</h1>
+      <p>Explore amazing trails for beginners, intermediates, and experienced hikers</p>
+    </header>
+
+    <!-- MAIN CONTENT: All the important stuff goes here -->
+    <main>
+      
+      <!-- FILTER BUTTONS: Let users choose what to see -->
+      <section class="filters">
+        <h2>Filter Destinations</h2>
+        
+        <!-- Buttons to filter by Easy, Moderate, Hard -->
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Levels</button>
+          <button class="filter-btn" data-filter="easy">Easy</button>
+          <button class="filter-btn" data-filter="moderate">Moderate</button>
+          <button class="filter-btn" data-filter="hard">Hard</button>
+        </div>
+
+        <!-- Type a destination name to search -->
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by destination name..."
+          class="search-bar"
+        >
+      </section>
+
+      <!-- DESTINATION CARDS: Each card shows one hiking spot -->
+      <section class="destinations-grid">
+        
+        <!-- Card 1: Green Lake Loop -->
+        <article class="card" data-difficulty="easy" data-duration="1-hour">
+          <img src="https://via.placeholder.com/300x200?text=Green+Lake" alt="Green Lake Loop" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Green Lake Loop</h3>
+            <p class="card-location">📍 Seattle (Urban)</p>
+            <p class="card-difficulty difficulty-easy">Difficulty: Easy</p>
+            <p class="card-stats">📏 2.8 miles | ⬆️ Flat | ⏱️ 1 hour</p>
+            <p class="card-accessibility">♿ Paved entire trail | Good for all abilities</p>
+            <p class="card-season">🌞 Best: Year-round (good for winter)</p>
+            <p class="card-description">Perfect for beginners! Beautiful lake, paved path, great for walking, jogging, or families. Lots of waterfowl to see.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.7/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Lake Union Trail -->
+        <article class="card" data-difficulty="easy" data-duration="1-hour">
+          <img src="https://via.placeholder.com/300x200?text=Lake+Union" alt="Lake Union Trail" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Lake Union Trail</h3>
+            <p class="card-location">📍 Seattle (Waterfront)</p>
+            <p class="card-difficulty difficulty-easy">Difficulty: Easy</p>
+            <p class="card-stats">📏 2.2 miles | ⬆️ Flat | ⏱️ 45 minutes</p>
+            <p class="card-accessibility">♿ Paved and smooth | Stroller friendly</p>
+            <p class="card-season">🌞 Best: Spring & Summer</p>
+            <p class="card-description">Urban trail with stunning downtown Seattle views, houseboats, and sailboats. Great for walking with friends or family.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.6/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Pine Lake Park Trail -->
+        <article class="card" data-difficulty="easy" data-duration="1-hour">
+          <img src="https://via.placeholder.com/300x200?text=Pine+Lake" alt="Pine Lake" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Pine Lake Park Trail</h3>
+            <p class="card-location">📍 Seattle (North)</p>
+            <p class="card-difficulty difficulty-easy">Difficulty: Easy</p>
+            <p class="card-stats">📏 1.8 miles | ⬆️ Flat | ⏱️ 1 hour</p>
+            <p class="card-accessibility">♿ Partially paved | Nature trail</p>
+            <p class="card-season">🌞 Best: Year-round</p>
+            <p class="card-description">Quiet neighborhood lake with peaceful forest trail. Great for birdwatching and a relaxing walk. Less crowded than Green Lake.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.5/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Ravenna Park Trail -->
+        <article class="card" data-difficulty="easy" data-duration="1-hour">
+          <img src="https://via.placeholder.com/300x200?text=Ravenna+Park" alt="Ravenna Park" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Ravenna Park Trail</h3>
+            <p class="card-location">📍 Seattle (University District)</p>
+            <p class="card-difficulty difficulty-easy">Difficulty: Easy</p>
+            <p class="card-stats">📏 2.0 miles | ⬆️ Flat | ⏱️ 50 minutes</p>
+            <p class="card-accessibility">♿ Some paved sections | Creek access</p>
+            <p class="card-season">🌞 Best: Spring (wildflowers)</p>
+            <p class="card-description">Hidden gem with creek, old growth trees, and peaceful forest feel. Excellent for families and nature lovers in the city.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.4/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Discovery Park Easy Trail -->
+        <article class="card" data-difficulty="easy" data-duration="2-hours">
+          <img src="https://via.placeholder.com/300x200?text=Discovery+Park" alt="Discovery Park" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Discovery Park Beach Trail</h3>
+            <p class="card-location">📍 Seattle (Ballard)</p>
+            <p class="card-difficulty difficulty-easy">Difficulty: Easy</p>
+            <p class="card-stats">📏 3.0 miles | ⬆️ 250 ft | ⏱️ 1.5 hours</p>
+            <p class="card-accessibility">♿ Partially paved | Beach and lighthouse views</p>
+            <p class="card-season">🌞 Best: Summer</p>
+            <p class="card-description">Seattle's largest park! Beautiful lighthouse, Puget Sound views, and beach access. Multiple easy routes available.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.8/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Rattlesnake Lake -->
+        <article class="card" data-difficulty="moderate" data-duration="3-hours">
+          <img src="https://via.placeholder.com/300x200?text=Rattlesnake+Lake" alt="Rattlesnake Lake" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Rattlesnake Lake</h3>
+            <p class="card-location">📍 North Bend (30 min drive)</p>
+            <p class="card-difficulty difficulty-moderate">Difficulty: Moderate</p>
+            <p class="card-stats">📏 3.0 miles | ⬆️ 800 ft | ⏱️ 2.5 hours</p>
+            <p class="card-accessibility">🚗 Car access | Mountain views</p>
+            <p class="card-season">🌞 Best: Summer & Fall</p>
+            <p class="card-description">Stunning turquoise lake surrounded by mountains. Moderate trail suitable for intermediate hikers. Beautiful destination for a half-day adventure.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.9/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: Tiger Mountain -->
+        <article class="card" data-difficulty="moderate" data-duration="3-hours">
+          <img src="https://via.placeholder.com/300x200?text=Tiger+Mountain" alt="Tiger Mountain" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Tiger Mountain - West Peak</h3>
+            <p class="card-location">📍 Issaquah (20 min drive)</p>
+            <p class="card-difficulty difficulty-moderate">Difficulty: Moderate</p>
+            <p class="card-stats">📏 3.5 miles | ⬆️ 1,400 ft | ⏱️ 3 hours</p>
+            <p class="card-accessibility">🚗 Car access | Forest trail</p>
+            <p class="card-season">🌞 Best: Spring & Fall</p>
+            <p class="card-description">Popular trail with great views at the summit. Good fitness required. Steeper sections but rewarding panoramic views of the Cascades.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.7/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Granite Mountain -->
+        <article class="card" data-difficulty="moderate" data-duration="4-hours">
+          <img src="https://via.placeholder.com/300x200?text=Granite+Mountain" alt="Granite Mountain" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Granite Mountain</h3>
+            <p class="card-location">📍 Snoqualmie (30 min drive)</p>
+            <p class="card-difficulty difficulty-moderate">Difficulty: Moderate</p>
+            <p class="card-stats">📏 4.8 miles | ⬆️ 1,900 ft | ⏱️ 3.5 hours</p>
+            <p class="card-accessibility">🚗 Car access | Switchbacks climb</p>
+            <p class="card-season">🌞 Best: June - October</p>
+            <p class="card-description">Amazing 360-degree views! Steep switchbacks but well-maintained trail. Wildflowers in summer. Great for intermediate hikers.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.8/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9: Little Si -->
+        <article class="card" data-difficulty="moderate" data-duration="3-hours">
+          <img src="https://via.placeholder.com/300x200?text=Little+Si" alt="Little Si" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Little Si</h3>
+            <p class="card-location">📍 North Bend (25 min drive)</p>
+            <p class="card-difficulty difficulty-moderate">Difficulty: Moderate</p>
+            <p class="card-stats">📏 1.6 miles | ⬆️ 1,200 ft | ⏱️ 2 hours</p>
+            <p class="card-accessibility">🚗 Car access | Steep but short</p>
+            <p class="card-season">🌞 Best: Spring & Fall</p>
+            <p class="card-description">Short but intense! Great views of Mount Si and surrounding mountains. Perfect for building endurance and leg strength.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.6/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 10: Mount Si -->
+        <article class="card" data-difficulty="hard" data-duration="5-hours">
+          <img src="https://via.placeholder.com/300x200?text=Mount+Si" alt="Mount Si" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Mount Si</h3>
+            <p class="card-location">📍 North Bend (25 min drive)</p>
+            <p class="card-difficulty difficulty-hard">Difficulty: Hard</p>
+            <p class="card-stats">📏 8.4 miles | ⬆️ 3,200 ft | ⏱️ 4-5 hours</p>
+            <p class="card-accessibility">🚗 Car access | Very popular</p>
+            <p class="card-season">🌞 Best: July - October</p>
+            <p class="card-description">King of the Cascades! One of the most popular hikes near Seattle. Stunning views reward the hard work. Crowded on weekends.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.9/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 11: Mailbox Peak -->
+        <article class="card" data-difficulty="hard" data-duration="5-hours">
+          <img src="https://via.placeholder.com/300x200?text=Mailbox+Peak" alt="Mailbox Peak" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Mailbox Peak</h3>
+            <p class="card-location">📍 North Bend (25 min drive)</p>
+            <p class="card-difficulty difficulty-hard">Difficulty: Hard</p>
+            <p class="card-stats">📏 4.0 miles | ⬆️ 4,000 ft | ⏱️ 4-5 hours</p>
+            <p class="card-accessibility">🚗 Car access | EXTREME elevation gain</p>
+            <p class="card-season">🌞 Best: July - September</p>
+            <p class="card-description">Brutal elevation! Not for the faint of heart. Incredible challenge for experienced hikers. Amazing summit views and old mailbox.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 4.8/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 12: Paradise Trail (Mount Rainier) -->
+        <article class="card" data-difficulty="hard" data-duration="6-hours">
+          <img src="https://via.placeholder.com/300x200?text=Mount+Rainier" alt="Mount Rainier Paradise" class="card-image">
+          <div class="card-content">
+            <h3 class="card-title">Paradise Trail - Mount Rainier</h3>
+            <p class="card-location">📍 Mount Rainier (1.5 hr drive)</p>
+            <p class="card-difficulty difficulty-hard">Difficulty: Hard</p>
+            <p class="card-stats">📏 5.5 miles | ⬆️ 1,700 ft | ⏱️ 4-5 hours</p>
+            <p class="card-accessibility">🚗 Car access | Alpine meadows</p>
+            <p class="card-season">🌞 Best: July - September</p>
+            <p class="card-description">Epic alpine hike! Wildflower meadows and stunning mountain views. Higher altitude means challenging conditions. Unforgettable experience.</p>
+            <div class="card-footer">
+              <span class="rating">⭐ 5.0/5</span>
+              <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+            </div>
+          </div>
+        </article>
+
+      </section>
+      <!-- End of all destination cards -->
+
+    </main>
+    <!-- End of main content -->
+
+    <!-- BOTTOM OF PAGE: Copyright and info -->
+    <footer>
+      <p>&copy; 2026 Seattle Hiking Trails. Created for hikers of all levels.</p>
+      <p>Exploring the Pacific Northwest.</p>
+    </footer>
+
+    <!-- Connect to script.js to make buttons work -->
+    <script src="script.js"></script>
+
   </body>
 </html>
  
