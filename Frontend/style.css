@@ -43,9 +43,15 @@ header p{
     
     
 }
-/* ============================================
+/* 
    WEATHER SECTION: Show current weather
-   ============================================ */
+
+background: linear-gradient = light blue gradient
+display: grid = creates a responsive grid layout
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) = automatically wraps columns
+border-left: 4px solid = green left border on cards
+gap: 15px = space between items
+   */
 .weather-section {
   background: linear-gradient(135deg, #e8f4f8 0%, #d4e8f0 100%);
   padding: 20px;
