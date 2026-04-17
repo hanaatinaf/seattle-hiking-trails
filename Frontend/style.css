@@ -1,0 +1,28 @@
+
+/*
+Seattle Hiking Trails css file 
+
+
+
+* = selects everything
+margin: 0; padding: 0; = removes default spacing
+box-sizing: border-box; = makes sizing easier
+font-family = the text style
+background-color = light gray background
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/*Body the main container*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+    color: #333;
+    background-color: #d4d4d4;
+
+}

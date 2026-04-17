@@ -17,19 +17,75 @@
       <p>Explore amazing trails for beginners, intermediates, and experienced hikers</p>
     </header>
 
+    <!-- SEATTLE WEATHER: Quick weather info for hikers -->
+    <section class="weather-section">
+      <h2>Seattle Weather Today</h2>
+      <div class="weather-info">
+        <p>🌡️ Temperature: <span id="temp">65°F</span></p>
+        <p>💧 Humidity: <span id="humidity">60%</span></p>
+        <p>🌧️ Conditions: <span id="conditions">Partly Cloudy</span></p>
+        <p>💡 Tip: Check weather before going! Rain is common year-round.</p>
+      </div>
+    </section>
+
+    <!-- TIPS FOR BEGINNERS: Helpful advice for new hikers -->
+    <section class="tips-section">
+      <h2>Tips for Beginners</h2>
+      <ul class="tips-list">
+        <li>🥾 Start with Easy trails to build confidence and fitness</li>
+        <li>💧 Bring plenty of water (at least 2 liters)</li>
+        <li>🗺️ Download maps offline or bring a paper map</li>
+        <li>☀️ Wear sunscreen, even on cloudy days</li>
+        <li>⏰ Start early to finish before dark</li>
+        <li>👥 Hike with friends for safety and fun</li>
+      </ul>
+    </section>
+
     <!-- MAIN CONTENT: All the important stuff goes here -->
     <main>
       
       <!-- FILTER BUTTONS: Let users choose what to see -->
       <section class="filters">
-        <h2>Filter Destinations</h2>
+        <h2>Filter & Sort Trails</h2>
         
+        <!-- Favorites counter -->
+        <div class="favorites-counter">
+          <p>❤️ Favorites saved: <span id="favCount">0</span></p>
+        </div>
+
         <!-- Buttons to filter by Easy, Moderate, Hard -->
         <div class="filter-group">
+          <h3>Filter by Difficulty:</h3>
           <button class="filter-btn active" data-filter="all">All Levels</button>
           <button class="filter-btn" data-filter="easy">Easy</button>
           <button class="filter-btn" data-filter="moderate">Moderate</button>
           <button class="filter-btn" data-filter="hard">Hard</button>
+        </div>
+
+        <!-- DIFFICULTY LEGEND: Explain what each level means -->
+        <div class="difficulty-legend">
+          <h3>What do the levels mean?</h3>
+          <div class="legend-item">
+            <span class="legend-easy">Easy:</span> Less than 2 hours, flat or gentle hills, good for everyone
+          </div>
+          <div class="legend-item">
+            <span class="legend-moderate">Moderate:</span> 2-4 hours, some climbing, need decent fitness
+          </div>
+          <div class="legend-item">
+            <span class="legend-hard">Hard:</span> 4+ hours, steep or long, need good fitness
+          </div>
+        </div>
+
+        <!-- SORT DROPDOWN: Sort trails by different criteria -->
+        <div class="sort-section">
+          <label for="sortSelect">Sort by:</label>
+          <select id="sortSelect" class="sort-dropdown">
+            <option value="default">Default</option>
+            <option value="distance">Distance (shortest first)</option>
+            <option value="duration">Duration (quickest first)</option>
+            <option value="difficulty">Difficulty (easy first)</option>
+            <option value="rating">Rating (best first)</option>
+          </select>
         </div>
 
         <!-- Type a destination name to search -->
