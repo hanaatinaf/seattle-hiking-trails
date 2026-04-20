@@ -83,3 +83,110 @@ gap: 15px = space between items
   font-weight: bold;
   color: #1c271c;
 }
+/*Tip Section afterTips for Beginners  */
+.tips-section{
+    background-color: #5c8a75;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffc107;
+}
+.tips-section h2{
+    color: #474a53;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+
+}
+.tips-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+
+}
+.tips-list li {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+/* ============================================
+   MAIN CONTENT: Container for all filters and cards
+   ============================================ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ============================================
+   FILTER SECTION: Buttons, search, dropdowns
+   ============================================ */
+.filters {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.filters h2 {
+  color: #2c5f2d;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+/* Favorites counter display */
+.favorites-counter {
+  background: #e8f5e9;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #4a8f4e;
+}
+
+.favorites-counter p {
+  color: #2c5f2d;
+  font-weight: bold;
+}
+
+#favCount {
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
+
+/* Filter buttons styling */
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group h3 {
+  color: #555;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.filter-btn {
+  background: #e0e0e0;
+  border: 2px solid #999;
+  padding: 12px 20px;
+  margin: 8px 8px 8px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #bdbdbd;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: #4a8f4e;
+  color: white;
+  border-color: #2c5f2d;
+  box-shadow: 0 4px 8px rgba(74, 143, 78, 0.3);
+}
