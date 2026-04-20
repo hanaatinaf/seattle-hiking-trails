@@ -57,3 +57,4 @@ By completing this project, you will learn:
 - Data persistence with localStorage
 - Basic UX/UI principles
 - How to organize a web project with HTML/CSS/JS files
+
